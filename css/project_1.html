@@ -1,0 +1,77 @@
+<!-- User profile pages have a great impact on a website’s success. Let’s start by applying some color and alignments
+
+Tasks:
+Set the background color of the body to DarkSlateGrey
+Center-align the headings and paragraphs, and set their text color to white
+“Run” the code to preview the page. Then “save” your progress and move on -->
+
+<style>
+  body {
+    background-color: DarkSlateGrey;
+    font-family: Arial, sans-serif;
+    color: white;
+    text-align: center;
+  }
+
+  #profile img {
+    display: block;
+    margin: auto; /* centers the image */
+  }
+
+  #profile {
+    list-style-type: none; /* removes bullet points */
+    padding: 0; /* removes padding */
+  }
+
+  #profile li, #streak li {
+    display: inline; /* aligns items horizontally */
+    margin: 0 10px; /* adds space between items */
+  }
+
+  #streak {
+    background-color: #4e5b6e; /* lighter shade for contrast */
+    padding: 10px;
+    border-radius: 10px; /* rounded corners for the div */
+    display: inline-block; /* to contain the UL and allow for background styling */
+    margin-top: 20px; /* adds space above the streak section */
+  }
+
+  .active-day {
+    color: lime; /* active day color */
+  }
+
+  .inactive-day {
+    color: gray; /* inactive day color */
+  }
+</style>
+
+
+<!-- provided -->
+<html>
+<head>
+  <title>John Doe's Profile</title>
+</head>
+<body>
+  <ul id="profile">
+    <img src="https://blob.sololearn.com/courses/ava.png">
+    <h2>John Doe</h2>
+    <p>🇺🇸USA</p>
+    <li>25 Followers</li>
+    <li>20 Following</li>
+    <li>⭐️1581 XP</li>
+  </ul>
+  <div id="streak">Streak
+    <ul>
+      <li class="active-day">M</li>
+      <li class="active-day">T</li>
+      <li class="active-day">W</li>
+      <li class="inactive-day">T</li>
+      <li class="inactive-day">F</li>
+      <li class="inactive-day">S</li>
+      <li class="inactive-day">S</li>
+    </ul>
+    <p>Current Streak: 3</p>
+    <p>Longest Streak: 16</p>
+  </div>
+</body>
+</html>
