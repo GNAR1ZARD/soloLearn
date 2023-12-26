@@ -1,0 +1,31 @@
+User
+The List of Content Models
+In HTML, elements typically belonged in either the block level or inline content model. HTML5 introduces seven main content models.
+
+- Metadata
+- Embedded
+- Interactive
+- Heading
+- Phrasing
+- Flow
+- Sectioning
+
+[u]Metadata[/u]: Content that sets up the presentation or behavior of the rest of the content. These elements are found in the head of the document.
+Elements: <base>, <link>, <meta>, <noscript>, <script>, <style>, <title>
+
+[u]Embedded[/u]: Content that imports other resources into the document.
+Elements: <audio>, <video>, <canvas>, <iframe>, <img>, <math>, <object>, <svg>
+
+[u]Interactive[/u]: Content specifically intended for user interaction.
+Elements: <a>, <audio>, <video>, <button>, <details>, <embed>, <iframe>, <img>, <input>, <label>, <object>, <select>, <textarea>
+
+[u]Heading[/u]: Defines a section header.
+Elements: <h1>, <h2>, <h3>, <h4>, <h5>, <h6>, <hgroup>
+
+[u]Phrasing[/u]: This model has a number of inline level elements in common with HTML4.
+Elements: <img>, <span>, <strong>, <label>, <br />, <small>, <sub>, and more.
+
+[u]Flow content[/u]: Contains the majority of HTML5 elements that would be included in the normal flow of the document.
+
+[u]Sectioning content[/u]: Defines the scope of headings, content, navigation, and footers.
+Elements: <article>, <aside>, <nav>, <section>

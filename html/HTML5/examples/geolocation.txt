@@ -1,0 +1,14 @@
+Using HTML Geolocation
+The Geolocation API’s main method is getCurrentPosition, which retrieves the current geographic location of the user's device.
+
+navigator.geolocation.getCurrentPosition();
+JS
+[u]Parameters:[/u]
+showLocation (mandatory): Defines the callback method that retrieves location information.
+ErrorHandler(optional): Defines the callback method that is invoked when an error occurs in processing the asynchronous call.
+Options (optional): Defines a set of options for retrieving the location information.
+
+User location can be presented in two ways: Geodetic and Civic.
+
+1. The geodetic way to describe position refers directly to latitude and longitude.
+2. The civic representation of location data is presented in a format that is more easily read and understood by the average person.
