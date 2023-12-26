@@ -1,0 +1,62 @@
+<!-- Message, Part 2
+And now, for the finishing touch!
+To complete the form, let's add a field for the message and a submission button!
+
+Task
+1. Inside the form, define the <textarea> element, and add the placeholder attribute with "Message" value.
+2. Make all the fields required by adding an eponymous attribute at the end.
+3. For the submit button, add the <input> element with type = "submit" and value = "SEND" attributes. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>first html</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h2>Skills</h2>
+    <table border="1">
+        <tr>
+            <th>Technologies</th>
+            <td>Python</td>
+            <td>Java</td>
+            <td>Django framework</td>
+        </tr>
+        <tr>
+            <th>Soft Skills</th>
+            <td>Problem Solving</td>
+            <td>Team Work</td>
+            <td>Flexibility</td>
+        </tr>
+    </table>
+    
+    <h2 style="font-style: italic;">Contacts</h2>
+    <a href="account-link" target="_blank">Page Name</a>
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+    
+    <!-- Message Section -->
+    <h2 style="font-style: italic;">Write me a message</h2>
+    <form>
+        <input type="text" placeholder="Name" name="name" required><br>
+        <input type="email" placeholder="Email" name="email" required><br>
+        <!-- text area supports mult lines of input -->
+        <textarea placeholder="Message" name="message" required></textarea><br>
+        <input type="submit" value="SEND">
+    </form>
+</body>
+</html>

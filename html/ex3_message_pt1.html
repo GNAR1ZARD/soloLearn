@@ -1,0 +1,61 @@
+<!-- Message, Part 1
+Great job! You have reached the final section!
+Let's create a static form which allows anyone who reads our CV the ability to write us messages in the future. We will do this in 2 steps.
+As the first step, we will create the Name and the Email fields.
+
+Task
+1. Write "Write me a message" in italics enclosed in the <h2>.
+2. Immediately below, add <form> tag.
+3. Inside the <form> tag, add two <input> elements -- for Name and Email fields accordingly -- each one in a new line.
+4. In each <input> element, add the placeholder attribute with the corresponding value ("Name" and "Email"). -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>first html</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h2>Skills</h2>
+    <table border="1">
+        <tr>
+            <th>Technologies</th>
+            <td>Python</td>
+            <td>Java</td>
+            <td>Django framework</td>
+        </tr>
+        <tr>
+            <th>Soft Skills</th>
+            <td>Problem Solving</td>
+            <td>Team Work</td>
+            <td>Flexibility</td>
+        </tr>
+    </table>
+    
+    <h2 style="font-style: italic;">Contacts</h2>
+    <a href="account-link" target="_blank">Page Name</a>
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+    
+    <!-- Message Section -->
+    <h2 style="font-style: italic;">Write me a message</h2>
+    <form>
+        <input type="text" placeholder="Name" name="name"><br>
+        <input type="email" placeholder="Email" name="email"><br>
+    </form>
+</body>
+</html>

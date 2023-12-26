@@ -1,0 +1,55 @@
+<!-- Contacts
+The next important element that should appear in your CV is your contact information.
+In this stage, we will add links to your professional accounts, social pages, and portfolios such as LinkedIn, SoloLearn, Github, or any other profiles or websites you want.
+
+Task
+1. Write "Contacts" in italics below the "Skills" table enclosed in <h2>.
+2. Add several <a> tags, and in one add an href attribute with your account link, and target attribute with a _blank value.
+3. Add the name of the page between the <a> and </a> tags. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>first html</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h2>Skills</h2>
+    <table border="1">
+        <tr>
+            <th>Technologies</th>
+            <td>Python</td>
+            <td>Java</td>
+            <td>Django framework</td>
+        </tr>
+        <tr>
+            <th>Soft Skills</th>
+            <td>Problem Solving</td>
+            <td>Team Work</td>
+            <td>Flexibility</td>
+        </tr>
+    </table>
+    <!-- Adding Contacts in italics -->
+    <h2 style="font-style: italic;">Contacts</h2>
+
+    <!-- Adding several <a> tags with one containing href and target attributes -->
+    <a href="account-link" target="_blank">Account Page</a>
+    <!-- Additional <a> tags as examples -->
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+</body>
+</html>
