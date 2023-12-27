@@ -1,0 +1,122 @@
+<!-- In this step, you’ll style the lists in the #profile and #streak sections to enhance the visual coherence of the page.
+
+Tasks:
+Override the default list style from the lists in both profile and streak sections by setting list-style to none
+Give the list in the #streak section a contrasting white background and add rounded corners with a border-radius of 5px
+Change the color of the paragraphs in the streak section to #676767 so the text can be read on the new background
+Save your progress to move forward -->
+
+<!-- style section -->
+<style>
+    body {
+        background-color: DarkSlateGrey;
+        font-family: Arial, sans-serif;
+        /* This sets the font for the whole page */
+        color: white;
+        text-align: center;
+    }
+
+    #profile img {
+        display: block;
+        margin: auto;
+        /* centers the image */
+    }
+
+    #profile {
+        list-style-type: none;
+        /* removes bullet points */
+        padding: 0;
+        /* removes padding */
+        text-align: center;
+        /* centers the text */
+        color: #FFFFFF;
+        /* sets the text color to white */
+    }
+
+    #profile li,
+    #streak li {
+        display: inline;
+        /* aligns items horizontally */
+        margin: 0 10px;
+        /* adds space between items */
+    }
+
+    #streak {
+        background-color: #4e5b6e;
+        /* lighter shade for contrast */
+        padding: 10px;
+        border-radius: 10px;
+        /* rounded corners for the div */
+        display: inline-block;
+        /* to contain the UL and allow for background styling */
+        margin-top: 20px;
+        /* adds space above the streak section */
+        text-align: center;
+        /* ensures the streak text is centered */
+    }
+
+    #streak ul {
+        /* no specific background-color needed, it will inherit from #streak */
+        padding: 10px 0;
+        /* vertical padding for top and bottom */
+        margin: 0;
+        /* remove default margin */
+        list-style-type: none;
+        /* no bullets */
+    }
+
+    #streak li {
+        display: inline;
+        /* inline display for the list items */
+        margin: 0 5px;
+        /* margin around the list items */
+    }
+
+    #streak p {
+        color: #FFFFFF;
+        /* light text color for readability */
+    }
+
+    .active-day {
+        color: lime;
+        /* bright green color for active days */
+    }
+
+    .inactive-day {
+        color: grey;
+        /* greyed out color for inactive days */
+    }
+</style>
+
+<!-- provided -->
+<html>
+
+<head>
+    <title>John Doe's Profile</title>
+</head>
+
+<body>
+    <ul id="profile">
+        <img src="https://blob.sololearn.com/courses/ava.png">
+        <h2>John Doe</h2>
+        <p>🇺🇸USA</p>
+        <li>25 Followers</li>
+        <li>20 Following</li>
+        <li>⭐️1581 XP</li>
+    </ul>
+    <div id="streak">Streak
+        <ul>
+            <li class="active-day">M</li>
+            <li class="active-day">T</li>
+            <li class="active-day">W</li>
+            <li class="inactive-day">T</li>
+            <li class="inactive-day">F</li>
+            <li class="inactive-day">S</li>
+            <li class="inactive-day">S</li>
+        </ul>
+        <p>Current Streak: 3</p>
+        <p>Longest Streak: 16</p>
+    </div>
+</body>
+
+</html>

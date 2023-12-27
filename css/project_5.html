@@ -1,0 +1,131 @@
+<!-- In this step, you’ll apply a pulsing animation to the active days to make them change in size and color.
+
+Tasks:
+Apply animation-name: pulse to the .active-day elements
+Make the duration of the animation 2s and ensure it plays infinite times
+Use @keyframes for the pulse animation to make the text size change from 100% and 120% and back again, and change the color to #00CC00 at the 50% mark of the animation -->
+
+<!-- style section -->
+<style>
+    body {
+        background-color: DarkSlateGrey;
+        font-family: Arial, sans-serif;
+        color: white;
+        text-align: center;
+    }
+
+    #profile img {
+        display: block;
+        margin: auto;
+    }
+
+    #profile {
+        list-style-type: none;
+        padding: 0;
+        text-align: center;
+        color: #FFFFFF;
+    }
+
+    #profile li {
+        display: inline;
+        /* items inline */
+        margin: 15px;
+        /* 15px margin around items */
+    }
+
+    #streak {
+        background-color: #4e5b6e;
+        padding-top: 10px;
+        /* 10px padding at the top */
+        border-radius: 10px;
+        display: inline-block;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    #streak ul {
+        padding: 0;
+        /* remove default padding */
+        margin: 0;
+        /* remove default margin */
+        list-style-type: none;
+    }
+
+    #streak li {
+        display: inline;
+        /* items inline */
+        margin: 5px;
+        /* 5px margin around items */
+        padding: 5px;
+        /* 5px padding around items */
+    }
+
+    #streak p {
+        display: inline;
+        /* paragraphs inline */
+        margin: 10px;
+        /* 10px margin around paragraphs */
+        color: #FFFFFF;
+    }
+
+    /* new animation for active days */
+    @keyframes pulse {
+
+        0%,
+        100% {
+            font-size: 100%;
+            color: lime;
+        }
+
+        50% {
+            font-size: 120%;
+            color: #00CC00;
+        }
+    }
+
+    .active-day {
+        animation-name: pulse;
+        /* apply pulse animation */
+        animation-duration: 2s;
+        /* duration 2 seconds */
+        animation-iteration-count: infinite;
+        /* repeat forever */
+    }
+
+    .inactive-day {
+        color: grey;
+    }
+</style>
+
+<!-- provided -->
+<html>
+
+<head>
+    <title>John Doe's Profile</title>
+</head>
+
+<body>
+    <ul id="profile">
+        <img src="https://blob.sololearn.com/courses/ava.png">
+        <h2>John Doe</h2>
+        <p>🇺🇸USA</p>
+        <li>25 Followers</li>
+        <li>20 Following</li>
+        <li>⭐️1581 XP</li>
+    </ul>
+    <div id="streak">Streak
+        <ul>
+            <li class="active-day">M</li>
+            <li class="active-day">T</li>
+            <li class="active-day">W</li>
+            <li class="inactive-day">T</li>
+            <li class="inactive-day">F</li>
+            <li class="inactive-day">S</li>
+            <li class="inactive-day">S</li>
+        </ul>
+        <p>Current Streak: 3</p>
+        <p>Longest Streak: 16</p>
+    </div>
+</body>
+
+</html>
