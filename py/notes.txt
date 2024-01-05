@@ -42,3 +42,8 @@ print(max([1, 4, 9, 2, 5, 6, 8]))
 print(abs(-99))
 print(abs(42))
 print(sum([1, 2, 3, 4, 5]))
+
+map
+The built-in functions map and filter are very useful higher-order functions that operate on lists (or similar objects called iterables).
+The function map takes a function and an iterable as arguments, and returns a new iterable with the function applied to each argument.
+
