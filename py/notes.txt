@@ -47,3 +47,10 @@ map
 The built-in functions map and filter are very useful higher-order functions that operate on lists (or similar objects called iterables).
 The function map takes a function and an iterable as arguments, and returns a new iterable with the function applied to each argument.
 
+Object Lifecycle
+The lifecycle of an object is made up of its creation, manipulation, and destruction.
+
+The first stage of the life-cycle of an object is the definition of the class to which it belongs.
+The next stage is the instantiation of an instance, when __init__ is called. Memory is allocated to store the instance. Just before this occurs, the __new__ method of the class is called. This is usually overridden only in special cases.
+After this has happened, the object is ready to be used.
+
