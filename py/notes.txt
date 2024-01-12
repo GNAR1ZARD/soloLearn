@@ -54,3 +54,12 @@ The first stage of the life-cycle of an object is the definition of the class to
 The next stage is the instantiation of an instance, when __init__ is called. Memory is allocated to store the instance. Just before this occurs, the __new__ method of the class is called. This is usually overridden only in special cases.
 After this has happened, the object is ready to be used.
 
+MetaCharacters/CharClasses
+Brackets [ ] are used to define character classes. They match any single character from the set of characters within the brackets. For example, [abc] would match any single character "a," "b," or "c."
+Quotes " " are used to define string literals in Python. In the given regular expression, the quotes are used to define the regular expression pattern as a string literal.
+Parentheses ( ) are used for grouping and capturing subpatterns within a regular expression. In the provided regular expression, (42) groups the characters "42" together as a single unit, and (42)+ specifies that this unit should occur one or more times.
+Curly braces can be used to represent the number of repetitions between two numbers.
+The regex {x,y} means "between x and y repetitions of something".
+Hence {0,1} is the same thing as ?.
+If the first number is missing, it is taken to be zero. If the second number is missing, it is taken to be infinity.
+
