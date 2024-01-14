@@ -1,0 +1,8 @@
+to compile:
+javac "programName".java
+
+to run:
+java "programName"
+
+In Java, the convention is that the name of the Java source file should match the name of the public class defined within that file. 
+This convention is not just for naming aesthetics but is a fundamental requirement of the Java language. 
