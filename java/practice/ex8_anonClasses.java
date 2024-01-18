@@ -15,6 +15,14 @@
 
 package soloLearn.java.practice;
 
+class Purchase {
+    int price;
+
+    public int totalAmount(int price) {
+        return price - (price * 10) / 100; // 10% discount for regular customers
+    }
+}
+
 public class ex8_anonClasses {
     public static void main(String[] args) {
         Purchase customer = new Purchase();
@@ -29,13 +37,5 @@ public class ex8_anonClasses {
 
         System.out.println(customer.totalAmount(1000));     // regular customer with 10% discount
         System.out.println(specialCustomer.totalAmount(100000)); // special customer with 20% discount
-    }
-}
-
-class Purchase {
-    int price;
-
-    public int totalAmount(int price) {
-        return price - (price * 10) / 100; // 10% discount for regular customers
     }
 }

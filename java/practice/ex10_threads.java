@@ -8,36 +8,34 @@
 package soloLearn.java.practice;
 
 public class ex10_threads {
-    class Main {
-        public static void main(String[] args) {
-            Name name = new Name();
-            Welcome welcome = new Welcome();
-    
-            synchronized (welcome) {
-                welcome.start();
-                try {
-                    welcome.wait(); // Wait for 'Name' to complete before proceeding
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-            }
-    
-            name.start();
-        }
-    }
-    
-    class Welcome extends Thread {
-        public void run() {
-            System.out.println("Welcome!");
-            synchronized (this) {
-                this.notify(); // Notify 'Main' that 'Welcome' has completed
+    public static void main(String[] args) {
+        Name name = new Name();
+        Welcome welcome = new Welcome();
+
+        synchronized (welcome) {
+            welcome.start(); // start the execution of threads
+            try {
+                welcome.wait(); // wait for 'Name' to complete before cont
+            } catch (InterruptedException e) {
+                e.printStackTrace();
             }
         }
+
+        name.start(); // start the execution of threads
     }
-    
-    class Name extends Thread {
-        public void run() {
-            System.out.println("Please enter your name");
+}
+
+class Welcome extends Thread {
+    public void run() {
+        System.out.println("Welcome!");
+        synchronized (this) {
+            this.notify(); // notify 'Main' that 'Welcome' has completed
         }
     }
-}    
+}
+
+class Name extends Thread {
+    public void run() {
+        System.out.println("Please enter your name");
+    }
+}
