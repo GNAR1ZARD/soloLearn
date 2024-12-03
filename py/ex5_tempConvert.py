@@ -8,14 +8,15 @@
 # Sample Output
 # 96.8
 
-celsius = int(input())
+# Hint:
+# Multiply the Celsius temperature by 1.8 then add 32
 
+# Take input as a float (to allow decimal values)
+temp = float(input())
 
-def conv(c):
-    # your code goes here
-    fahrenheit = (celsius / 5) * 9 + 32
-    return fahrenheit
+# Define the function
+def convert(temp):
+    return (temp * 1.8) + 32  # Return the calculated Fahrenheit value
 
-
-fahrenheit = conv(celsius)
-print(fahrenheit)
+# Call the function and print the result
+print(convert(temp))
