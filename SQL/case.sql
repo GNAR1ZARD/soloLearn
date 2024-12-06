@@ -11,6 +11,8 @@
 
 -- Hint: To calculate the percentage of a number, simply multiply it by the percentage divided by 100. For example, to get 10%, multiply the number by 0.1.
 
+-- SELECT * This retrieves all columns 
+
 SELECT 
     firstname, 
     lastname, 
